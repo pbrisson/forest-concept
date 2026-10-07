@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#232a20">
+  <title>Autumn Forest</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./scene/forest.css">
+  <script type="module" src="./scene/ez-forest.js"></script>
+</head>
+<body>
+  <main class="forest-scene" aria-label="Animated autumn forest">
+    <img data-forest-fallback src="./assets/forest-1680.webp" srcset="./assets/forest-960.webp 960w, ./assets/forest-1680.webp 1680w" sizes="100vw" alt="Autumn tree canopy in warm sunlight">
+    <ez-forest aria-hidden="true"><canvas></canvas></ez-forest>
+    <div class="forest-loader" data-forest-loader role="progressbar" aria-label="Loading forest" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="forest-loader-number"><span class="forest-loader-label">LOADING</span><span data-forest-percent>0%</span></div>
+      <div class="forest-loader-track" aria-hidden="true"><div class="forest-loader-fill"></div></div>
+    </div>
+    <noscript><style>.forest-loader { display: none; }</style></noscript>
+  </main>
+</body>
+</html>

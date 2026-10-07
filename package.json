@@ -1,0 +1,13 @@
+{
+  "name": "forest-concept",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check public/scene/ez-forest.js && node --check public/scene/forest-temporal.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
